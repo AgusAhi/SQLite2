@@ -10,7 +10,6 @@ public class Main {
             CreateTables.createPlayer(conn);
             LoadTables.loadTeams(conn);
             LoadTables.loadPlayers(conn);
-            Printing.printTeam(conn); /// LO NUEVO
         } finally {
             if (conn != null) {
                 conn.close();
